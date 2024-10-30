@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParcialProgramacion</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+
+  </head>
+  <body>
+    <!--  Header -->
+  <header>
+    
+    <div class="containerPrincipal_Header">
+
+      <div class="container_contentHeader">
+
+        <div class="headerSearch" >  
+      
+          <input id="inputHeader" class="inputHeader" placeholder="Ingrese Un Elemento" type="text"/>
+      
+          <button id="ButtonSearch" class="ButtonSearch">
+             
+             Buscar<span class="material-symbols-outlined">
+              search
+              </span>
+          
+          </button>
+      
+        </div>
+      
+        <div>
+      
+          <button id="ButtonAdd" class="Header_ButtonAdd">Agregar Elemento
+            <span class="material-symbols-outlined">
+              add_circle
+              </span>
+          </button>
+      
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+<!-- Main -->
+  <main>
+    <div class="container_view">
+      
+      <aside class="listAside">
+        <h2>Categorias
+          
+        <span class="material-symbols-outlined">
+          filter_list
+          </span>
+        </h2>
+
+          
+          <ul id = "ListFilter"></ul>
+
+      </aside>
+      
+      <div class="store" id="store_container">
+
+
+
+      </div>
+
+
+      <!-- POPUP -->
+      
+      <div class="popUPContainer_principal" id="modalPopUP">
+        <div class="popUPContainer">
+          
+          <div class="container_popUPHeader"> 
+            <h1>Agregar o modificar un producto</h1>
+          </div>
+          <div class="containerInputs_popUp">
+
+            <input placeholder="Ingresar un nombre" id="name" type="text">
+            <input placeholder="Ingresar una image" id="img" type="text">
+            <input placeholder="precio" value="0" id="precio" type="number">
+            <select id="categoria">
+                <option> Seleccione una categoria </option>
+                <option>Bebidas</option>
+                <option>Papas</option>
+                <option>Hamburguesas</option>
+            </select>
+          
+          </div>
+          
+          <div class="container_popUPFooter">
+            <button class="popUPButton cancel" id="cancelButton" >Cancelar</button>
+            <button class="popUPButton accept" id="acceptButton">Aceptar</button>
+            <button class="popUPButton delete" id="deleteButton">Eliminar</button>
+          
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
